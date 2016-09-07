@@ -1,0 +1,28 @@
+var testObject = {
+	name : "saravanan c",
+	age : "26",
+	more : {
+		friend : "antony demillo",
+		girlFriend : "private",
+		moreInfo:function(){
+			console.log(this.friend);
+			//console.log(this.more.friend);
+		}
+	}
+}
+
+//testObject.moreInfo();
+//Uncaught TypeError: Object #<Object> has no method 'moreInfo'
+
+testObject.more.moreInfo();
+
+console.log(testObject.name);
+
+console.log(testObject);
+
+for(var testInd in testObject){
+	console.log(testObject[testInd]);
+}
+
+
+
